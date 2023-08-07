@@ -17,7 +17,8 @@ class TaskFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'name'=>fake()->name(),
+            'is_completed'=> rand(0,1)
         ];
     }
 }
